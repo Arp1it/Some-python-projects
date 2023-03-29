@@ -6,7 +6,7 @@ from win32com.client import Dispatch
 speak = Dispatch("SAPI.SpVoice").Speak
 
 def weather(querry):
-    a = requests.get(f'http://api.weatherapi.com/v1/current.json?key=3c38dfe0d1bf445ea6874504232603&q={querry}')
+    a = requests.get(f'api_here')
     response = a.text
 
     json_data = json.loads(response)
